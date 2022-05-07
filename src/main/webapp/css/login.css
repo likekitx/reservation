@@ -1,0 +1,426 @@
+@charset "utf-8";
+*{
+    //取消下划线
+    text-decoration: none;
+    //取消列表样式
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    //弹性元素
+    display: flex;
+    //垂直居中
+    justify-content: center;
+    //交叉轴居中
+    align-items: center;
+    width:1920px;
+}
+body:before{
+    content: "";
+    width: 1920px;
+    height: 920px;
+    background: url(../img/loginBackV2.jpg) no-repeat fixed;
+    background-size: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    filter: blur(5px);
+}
+header {
+    width: 1920px;
+    height: 120px;
+    /*border: 1px solid black;*/
+}
+header .headIcon{
+    width: 280px;
+    height: 80px;
+    /*border: 1px solid black;*/
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+    cursor: pointer;
+}
+header .headIcon .icon {
+    float: left;
+}
+header .headIcon h1 {
+    float: left;
+    margin-top: 18px;
+    font: 700 36px STKaiti;
+    color: rgba(255, 60, 60, 0.7);
+}
+header .login{
+    width: 270px;
+    height: 80px;
+    /*border: 1px solid black;*/
+    float: left;
+    margin-top: 20px;
+    margin-left: 1200px;
+    margin-bottom: 30px;
+}
+header .login p{
+    float: left;
+    font: 500 23px SourceHanSansSC;
+    margin-top: 24px;
+    margin-left: 10px;
+}
+header .login .layui-btn-container .layui-btn-radius{
+    border-radius: 18px;
+}
+header .login .layui-btn-container .layui-btn-normal{
+    background-color: #f16868;
+}
+header .login .layui-btn{
+    float: left;
+    font: 600 25px STKaiti;
+    width: 120px;
+    height: 40px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+header hr{
+    border-bottom: 1px solid #f5bbbb!important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: rgb(245, 187, 187) !important;
+}
+.main {
+    margin-top: 15px;
+    /*border-top: 1px solid black;*/
+    width: 100%;
+    height: 750px;
+}
+.main .layui-carousel {
+    border: 1px solid black;
+    position: relative;
+    left: 70px;
+    top: 93px;
+    float: left;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.main .layui-carousel img{
+    width: 830px;
+    height: 564px;
+    background-color: #fff0f0;
+    border: 1px solid black;
+}
+.main .register {
+    width: 800px;
+    height: 550px;
+    /*border: 1px solid #eab1b1;*/
+    border-radius: 50px;
+    position: relative;
+    left: 190px;
+    top: 100px;
+    float: left;
+    /*display: none;*/
+}
+.main .register .layui-form{
+    width: 60%;
+    height: 70%;
+    /*border: 1px solid #ffffff;*/
+    margin: 83px auto;
+    position: relative;
+}
+.main .register .layui-form p{
+    font:600 20px KaiTi;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.main .register .layui-form .account p{
+    padding: 0;
+    position: absolute;
+    font:500 18px KaiTi;
+    width: 80px;
+    height: 20px;
+    left: 10px;
+    bottom: -18px;
+    color: #00b5ff;
+    display: block;
+    cursor: pointer;
+}
+.main .register .layui-form .account{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 164px;
+    top: 50px;
+    right: 38px;
+}
+.main .register .layui-form .account .layui-form-item{
+    width: 100%;
+    height: 38%;
+    /*border: 1px solid black;*/
+    margin-top: 16px;
+    position: relative;
+}
+.main .register .layui-form .account .layui-form-item img{
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 12px 12px;
+}
+.main .register .layui-form .account .layui-form-item .layui-form-label{
+    width: 55px;
+    font: 520 22px STKaiti;
+    /*border: 1px solid black;*/
+    margin-top: 16px;
+    padding: 0 4px 0 0;
+}
+.main .register .layui-form .account .layui-form-item .layui-input-block{
+    /*border: 1px solid black;*/
+    width: 260px;
+    height: 45px;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+.main .register .layui-form .account .layui-form-item .layui-input-block input{
+    width: 100%;
+    height: 45px;
+}
+.main .register .layui-form .layui-elem-field{
+    width: 400px;
+    height: 70px;
+    margin: 175px auto auto;
+    position: relative;
+}
+.main .register .layui-form .layui-elem-field .layui-field-box{
+    /*border: 1px solid black;*/
+    width: 370px;
+    padding: 0;
+    position: absolute;
+    left: 54px;
+    top: 1px;
+}
+.main .register .layui-form .layui-elem-field .layui-field-box a{
+    text-decoration: underline;
+    padding-bottom: 1px;
+    color: #5aa1b0;
+    cursor: pointer;
+}
+.main .register .layui-form .layui-elem-field .layui-field-box a:hover{
+    color: #7993c8;
+}
+.main .register .layui-form .layui-submit{
+    /*border: 1px solid black;*/
+    width: 430px;
+    height: 70px;
+    position: relative;
+    margin: 10px auto auto;
+}
+.main .register .layui-form .layui-submit .layui-btn{
+    width: 93%;
+    height: 70%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+}
+.main .forgetPassword {
+    width: 800px;
+    height: 550px;
+    /*border: 1px solid #eab1b1;*/
+    border-radius: 50px;
+    position: relative;
+    left: 190px;
+    top: 100px;
+    float: left;
+    display: none;
+}
+.main .forgetPassword .layui-form{
+    width: 60%;
+    height: 70%;
+    /*border: 1px solid #ffffff;*/
+    margin: 83px auto;
+    position: relative;
+}
+.main .forgetPassword .layui-form p{
+    font:600 20px KaiTi;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.main .forgetPassword .layui-form .forgetForm p{
+    padding: 0;
+    position: absolute;
+    font:500 18px KaiTi;
+    width: 80px;
+    height: 20px;
+    left: 10px;
+    bottom: -18px;
+    color: #00b5ff;
+    display: block;
+    cursor: pointer;
+}
+.main .forgetPassword .layui-form .forgetForm{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 220px;
+    top: 50px;
+    right: 38px;
+}
+.main .forgetPassword .layui-form .forgetForm .layui-form-item{
+    width: 100%;
+    height: 27%;
+    /*border: 1px solid black;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.main .forgetPassword .layui-form .forgetForm .layui-form-item img{
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 12px 12px;
+}
+.main .forgetPassword .layui-form .forgetForm .layui-form-item .layui-form-label{
+    width: 55px;
+    font: 520 22px STKaiti;
+    /*border: 1px solid black;*/
+    margin-top: 16px;
+    padding: 0 4px 0 0;
+}
+.main .forgetPassword .layui-form .forgetForm .layui-form-item .layui-input-block{
+    /*border: 1px solid black;*/
+    width: 260px;
+    height: 45px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+.main .forgetPassword .layui-form .forgetForm .layui-form-item .layui-input-block input{
+    width: 100%;
+    height: 45px;
+}
+.main .forgetPassword .layui-form .layui-submit{
+    /*border: 1px solid black;*/
+    width: 390px;
+    height: 70px;
+    position: relative;
+    margin-top: 217px;
+    margin-left: 45px;
+}
+.main .forgetPassword .layui-form .layui-submit .last{
+    width: 46%;
+    height: 70%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+    background-color: #fabf9d;
+    color: #584e4e;
+}
+.main .forgetPassword .layui-form .layui-submit .layui-btn{
+    width: 46%;
+    height: 70%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+}
+.main .updatePassword{
+    width: 800px;
+    height: 550px;
+    /*border: 1px solid #eab1b1;*/
+    border-radius: 50px;
+    position: relative;
+    left: 190px;
+    top: 100px;
+    float: left;
+    display: none;
+}
+.main .updatePassword .layui-form{
+    width: 65%;
+    height: 70%;
+    /*border: 1px solid #ffffff;*/
+    margin: 83px auto;
+    position: relative;
+}
+.main .updatePassword .layui-form p{
+    font:600 20px KaiTi;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.main .updatePassword .layui-form .forgetForm p{
+    padding: 0;
+    position: absolute;
+    font:500 18px KaiTi;
+    width: 80px;
+    height: 20px;
+    left: 10px;
+    bottom: -18px;
+    color: #00b5ff;
+    display: block;
+    cursor: pointer;
+}
+.main .updatePassword .layui-form .forgetForm{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 430px;
+    height: 170px;
+    top: 50px;
+    right: 38px;
+}
+.main .updatePassword .layui-form .forgetForm .layui-form-item{
+    width: 100%;
+    height: 38%;
+    /*border: 1px solid black;*/
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.main .updatePassword .layui-form .forgetForm .layui-form-item img{
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 12px 12px;
+}
+.main .updatePassword .layui-form .forgetForm .layui-form-item .layui-form-label{
+    width: 95px;
+    font: 520 22px STKaiti;
+    /*border: 1px solid black;*/
+    margin-top: 16px;
+    padding: 0 4px 0 0;
+    text-align: center;
+}
+.main .updatePassword .layui-form .forgetForm .layui-form-item .layui-input-block{
+    /*border: 1px solid black;*/
+    width: 260px;
+    height: 45px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+.main .updatePassword .layui-form .forgetForm .layui-form-item .layui-input-block input{
+    width: 100%;
+    height: 45px;
+}
+.main .updatePassword .layui-form .layui-submit{
+    /*border: 1px solid black;*/
+    width: 380px;
+    height: 70px;
+    position: relative;
+    margin-top: 180px;
+    margin-left: 85px;
+}
+.main .updatePassword .layui-form .layui-submit .layui-btn{
+    width: 93%;
+    height: 70%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+}

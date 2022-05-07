@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body:before {
+    content: "";
+    width: 1920px;
+    height: 936px;
+    background-image: url(../img/veryGirlLike.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .7;
+    filter: blur(2px)
+}
+
+header {
+    width: 1920px;
+    height: 130px
+}
+
+header .headIcon {
+    width: 280px;
+    height: 80px;
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+    cursor: pointer
+}
+
+header .headIcon .icon {
+    float: left
+}
+
+header .headIcon h1 {
+    float: left;
+    margin-top: 18px;
+    font: 700 36px STKaiti;
+    color: #befffb
+}
+
+header hr {
+    position: relative;
+    top: 20px;
+    border-bottom: 1px solid #ccfffb!important;
+    border-bottom-width: 1px!important;
+    border-bottom-style: solid!important;
+    border-bottom-color: #abe3e3!important
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    width: 1920px;
+    height: 760px
+}
+
+.main .icon-section {
+    width: 430px;
+    height: 500px;
+    position: absolute;
+    right: 0
+}
+
+.main .icon-section .dialog {
+    width: 300px;
+    height: 100px;
+    background: url(../img/logLike.png) no-repeat center center
+}
+
+.main .icon-section .dialog p {
+    font: 600 22px KaiTi;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    padding-top: 15px;
+    line-height: 27px;
+    color: #9dddff
+}
+
+.main .icon-section img {
+    position: absolute;
+    right: 0;
+    top: 30px
+}
+
+.main .nav-section .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 100px;
+    top: 130px;
+    width: 170px;
+    height: 450px;
+    box-shadow: 0 0 13px #d6faff
+}
+
+.main .nav-section .nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #dafff8;
+    letter-spacing: .2rem;
+    transition: all .5s ease;
+    font: 600 26px KaiTi
+}
+
+.main .nav-section .nav .nav-item:hover {
+    color: #7ed3f5;
+    background: #d0ffff;
+    transition: all .5s ease
+}
+
+.main .nav-section .nav .navItem {
+    width: 600px;
+    height: 65px;
+    position: absolute;
+    left: 185px;
+    background: linear-gradient(155deg,transparent 45px,rgba(79,226,214,.6) 0) top left,linear-gradient(25deg,transparent 45px,rgba(79,226,214,.6) 0) bottom right;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    font: 600 30px KaiTi;
+    text-align: center;
+    padding-top: 35px;
+    color: #f8d1c3;
+    z-index: 10
+}
+
+.main .mainThis {
+    width: 1100px;
+    height: 420px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    display: none
+}
+
+.main .mainThis form {
+    width: 50%;
+    height: 90%;
+    margin-top: 27px;
+    margin-left: 260px
+}
+
+.main .mainThis .layui-form {
+    position: relative
+}
+
+.main .mainThis .layui-form .layui-form-item {
+    width: 500px;
+    height: 50px;
+    position: relative
+}
+
+.main .mainThis .layui-form .layui-form-item img {
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 4px 4px
+}
+
+.main .mainThis .layui-form .layui-form-item .layui-form-label {
+    width: 44px;
+    font: 520 18px SourceHanSansSC;
+    margin-top: 12px;
+    padding: 0 4px 0 0
+}
+
+.main .mainThis .layui-form .layui-form-item .layui-input-block {
+    width: 400px;
+    height: 40px;
+    position: relative;
+    right: 12px;
+    top: 4px
+}
+
+.main .mainThis .layui-form .layui-form-item .layui-input-block input {
+    width: 100%;
+    height: 40px
+}
+
+.main .mainThis .layui-form .layui-submit {
+    width: 450px;
+    height: 60px;
+    position: relative;
+    margin: 5px auto auto
+}
+
+.main .mainThis .layui-form .layui-submit .layui-btn {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 4px;
+    left: 70px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi
+}
+
+.main .vegTable {
+    width: 1098px;
+    height: 420px;
+    position: absolute;
+    top: 200px;
+    left: 470px;
+    display: none
+}
+
+.main .vegTable .deleteVeg {
+    width: 120px;
+    height: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+    border: 0;
+    color: #f6f1f1;
+    font: 600 18px STKaiti;
+    cursor: pointer;
+    background-color: #d2a698;
+    position: absolute;
+    top: 353px;
+    left: 977px;
+    transition: all .1s ease
+}
+
+.main .vegTable .deleteVeg:active {
+    width: 118px;
+    height: 39px
+}
+
+.laytable-cell-checkbox,.laytable-cell-numbers,.laytable-cell-radio,.laytable-cell-space {
+    padding-top: 15px;
+    text-align: center
+}

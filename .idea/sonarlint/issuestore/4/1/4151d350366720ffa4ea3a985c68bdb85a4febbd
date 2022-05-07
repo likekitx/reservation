@@ -1,0 +1,14 @@
+
+G
+java:S1948"%Make "map" transient or serializable.( ºº¢ıÿÿÿÿ8äæŒâ‚0
+H
+java:S1948"&Make "list" transient or serializable.(‹ÆÎùÿÿÿÿ8ôæŒâ‚0
+J
+java:S1948"-Make "bossService" transient or serializable.(¿Âİ¾8„çŒâ‚0
+K
+java:S1172`".Remove this unused method parameter "request".(Û÷‘„8£çŒâ‚0
+c
+java:S1192H"FDefine a constant instead of duplicating this literal "count" 3 times.(ÄÃşä8£çŒâ‚0
+e
+java:S11929"HDefine a constant instead of duplicating this literal "message" 5 times.(õ–¬¢8©çŒâ‚0
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œÁÍÊúÿÿÿÿ8©çŒâ‚0

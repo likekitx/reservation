@@ -1,0 +1,722 @@
+*{
+    //取消下划线
+    text-decoration: none;
+    //取消列表样式
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    //弹性元素
+    display: flex;
+    //垂直居中
+    justify-content: center;
+    //交叉轴居中
+    align-items: center;
+    background-image: radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0) 40vw), radial-gradient(rgba(0, 128, 0, 0.3), rgba(0, 128, 0, 0) 40vw), radial-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 40vw), radial-gradient(rgba(255, 255, 0, 0.3), rgba(255, 255, 0, 0) 40vw), radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0) 40vw);
+    background-position: -40vw 14rem, 50% 10rem, 60vw 14rem, -10vw calc(14rem + 20vw), 30vw calc(14rem + 20vw);
+    background-size: 85vw 85vw;
+    background-repeat: no-repeat;
+}
+header {
+    width: 1920px;
+    height: 120px;
+    /*border: 1px solid black;*/
+}
+header .headIcon{
+    width: 280px;
+    height: 80px;
+    /*border: 1px solid black;*/
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+    cursor: pointer;
+}
+header .headIcon .icon {
+    float: left;
+    margin-top: -7px
+}
+header .headIcon h1 {
+    float: left;
+    margin-top: 18px;
+    font: 700 36px STXingkai;
+    color: rgba(255, 60, 60, 0.7);
+}
+header .nav-section{
+    float: left;
+    /*position: relative;*/
+}
+header .nav-section .nav{
+    display: flex;
+    /*将项目垂直排列*/
+    /*flex-direction: column;*/
+    /*默认的一行一行布局*/
+    flex-direction: row;
+    position: absolute;
+    left: 510px;
+    top: 24px;
+    /*border: 1px solid black;*/
+    width: 900px;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(255, 138, 138, 0.1);
+    /*background: #fff;*/
+    /*z-index: 10;*/
+}
+
+header .nav-section .nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*平均分配项目空间*/
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s ease;
+    font: 500 24px KaiTi;
+    cursor:pointer;
+    /*border: 1px solid black;*/
+    /*border-radius: 10px;*/
+}
+header .nav-section .nav .nav-item:hover {
+    color: #12e5b3;
+    background: rgb(255, 225, 225);
+    transition: all 0.5s ease;
+}
+header .nav-section .nav .nav-span {
+    position: absolute;
+    bottom: 0;
+    width: 0px;
+    height: 5px;
+    background: #ffbdbd;
+    border-radius: 30%;
+}
+header .icon-section{
+    float: right;
+    width: 120px;
+    height: 44px;
+    margin-top: 20px;
+    margin-right: 110px;
+    /*border: 1px solid black;*/
+    box-shadow: 0 0 20px rgba(105, 255, 77, 0.1);
+    border-radius: 20px;
+}
+header .icon-section button{
+    width: 120px;
+    height: 44px;
+    margin-top:3px;
+    letter-spacing: 5px;
+    font: 600 24px KaiTi;
+    background-color: #c0dfb4;
+    color: #44918f;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /*border: 1px solid black;*/
+    top: 0;
+    width: 1920px;
+    height: 1080px;
+    /*height: 1120px;*/
+}
+.main .search{
+    width: 800px;
+    height: 58px;
+    /*border: 1px solid black;*/
+    margin: 4px auto;
+    position: relative;
+    z-index:10;
+}
+.main .search input{
+    width: 800px;
+    height: 58px;
+    border-radius: 8px;
+    z-index: 1;
+    font: 500 26px SourceHanSansSC;
+    padding-left: 12px;
+    border: 2px solid #cdc6c6;
+}
+.main .search button{
+    width:52px;
+    height:52px;
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    z-index: 2;
+    background: url("../img/search.png") no-repeat center;
+    background-size: 99%;
+    border-radius: 35px;
+    border-color: #ffffff;
+    /*border: 1px solid #1d1d1d;*/
+    cursor: pointer;
+}
+.main .search button:hover{
+    background-size: 97%;
+}
+.main .search button:active{
+    background-size: 90%;
+}
+/*当被点击改变css的样式*/
+.main .search .hintCss{
+    border-left: 3px solid #ff6336;
+    border-right: 3px solid #ff6336;
+    border-bottom: 3px solid #ff6336;
+}
+.main .search .inputCss{
+    border-left: 3px solid #ff6336;
+    border-right: 3px solid #ff6336;
+    border-top: 3px solid #ff6336;
+    border-radius: 8px 8px 0 0;
+}
+hr{
+    line-height:0;
+    margin:0;
+    padding:0;
+    border-bottom: 1px solid #d4d0d0 !important;
+}
+.main .search .searchHr{
+    position: absolute;
+    width: 720px;
+    margin-left: 14px;
+    top: 51px;
+}
+.main .search .hint{
+    display: flex;
+    flex-direction: row;
+    max-height: 500px;
+    /*box-shadow: 0 0 20px rgba(53, 46, 46, 0.4);*/
+    border-radius:0 0 8px 8px;
+    /*border: 2px solid #ff6336;*/
+    background-color: #fdfcff;
+    z-index: 15;
+}
+.main .search .hint .options{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main .search .hint .options .option-li{
+    display: flex;
+    width: 98.55%;
+    height: 39px;
+    flex-direction: row;
+    list-style-type: circle;
+    font: 500 22px SourceHanSansSC;
+    padding-top: 6px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.main .search .hint .options .option-li-not{
+    display: flex;
+    width: 98.55%;
+    height: 39px;
+    flex-direction: row;
+    list-style-type: circle;
+    font: 500 20px none;
+    color: #948f8f;
+    padding-top: 7px;
+    padding-left: 10px;
+    cursor: none;
+}
+.main .search .hint .options .option-li:hover{
+    background-color: #ffe5d9;
+}
+.main .search .hint .options .option-li-not:hover{
+    background-color: #cecccc;
+}
+.main .search .hint .options .keyLi{
+    background-color: #ffe5d9;
+}
+.main .layui-carousel{
+    /*border-top: 1px solid black;*/
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 0;
+    cursor: pointer;
+}
+.main .layui-carousel img {
+    width: 900px;
+    height: 530px;
+}
+.main .grid{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    width: 530px;
+    height: 530px;
+    border: 1px solid #f3ebeb;
+    color: #ff6f6f;
+}
+.main .grid .snack p{
+    float: right;
+    font: 700 48px STXingkai;
+    margin-top: 50px;
+    margin-right: 25px;
+}
+.main .grid .snack .p1{
+    font: 500 38px STXingkai;
+    font-style: italic;
+    float: right;
+    margin-top: 110px;
+    margin-right: -90px;
+}
+.main .grid .snack{
+    width: 327px;
+    height: 200px;
+    border: 1px solid #dafff1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: url(../img/peach1.png) no-repeat left center;
+    background-size: 56%;
+    background-color: #e6fff5;
+    z-index:4;
+    color: #87c7ff;
+}
+.main .grid .schoolEat p{
+    font: 700 48px STXingkai;
+    margin-top: 200px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+.main .grid .schoolEat .p1{
+    font: 500 35px STXingkai;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.main .grid .schoolEat{
+    width: 200px;
+    height: 327px;
+    border: 1px solid #d9d9ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: url(../img/peach2.png) no-repeat center 40px;
+    background-size: 85%;
+    background-color: #f0f0ff;
+    z-index:3;
+    color: #ffa374;
+}
+.main .grid .oneMoney p{
+    font: 700 48px STXingkai;
+    float: left;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.main .grid .oneMoney .p1{
+    font: 500 38px STXingkai;
+    font-style: italic;
+    float: left;
+    margin-top: 110px;
+    margin-left: -80px;
+}
+.main .grid .oneMoney{
+    width: 327px;
+    height: 200px;
+    border: 1px solid #aaa5ff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: url(../img/peach3.png) no-repeat center right;
+    background-size: 45%;
+    background-color: #c3befa;
+    z-index:2;
+    color: #ab6e6e;
+}
+.main .grid .group p{
+    font: 700 48px STXingkai;
+    margin-top: 15px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+.main .grid .group .p1{
+    margin-top: 10px;
+    font: 500 38px STXingkai;
+    font-style: italic;
+    margin-left: 45px;
+}
+.main .grid .group{
+    width: 200px;
+    height: 327px;
+    border: 1px solid #c1ffc1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: url(../img/peach4.png) no-repeat center 150px;
+    background-size: 75%;
+    background-color: #dcffdc;
+    z-index:1;
+    color: #f66d6d;
+}
+.main .grid .centerImg{
+    width: 130px;
+    height: 130px;
+    /*border: 1px solid black;*/
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    transition: all 0.7s ease;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.main .grid .centerImg img{
+    width: 90px;
+    height: 90px;
+    /*border: 1px solid black;*/
+    margin: 20px 0 0 20px;
+}
+.main .grid .schoolEat:hover p{
+    margin-top: 280px;
+}
+.main .grid .schoolEat:hover .p1{
+    margin-top: 10px;
+}
+.main .grid .centerImg:hover{
+    transform: rotate(360deg) scale(1.5);
+}
+.main .youLike{
+    /*border: 1px solid black;*/
+    position: absolute;
+    top: 680px;
+    left: 200px;
+    width: 1520px;
+    height: 360px;
+    /*height: 410px;*/
+}
+.main .youLike .youLikeVegOne{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    /*border: 1px solid black;*/
+    width: 355px;
+    height: 300px;
+    cursor: pointer;
+}
+.main .youLike .youLikeVegTwo{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    /*border: 1px solid black;*/
+    width: 355px;
+    height: 300px;
+    cursor: pointer;
+}
+.main .youLike .youLikeVegThree{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    /*border: 1px solid black;*/
+    width: 355px;
+    height: 300px;
+    cursor: pointer;
+}
+.main .youLike .youLikeVegFour{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    /*border: 1px solid black;*/
+    width: 355px;
+    height: 300px;
+    cursor: pointer;
+}
+.main .youLike img{
+    /*border: 1px solid black;*/
+    width:355px;
+    height: 240px;
+}
+.main .youLike .youLikeP{
+    font: 600 24px KaiTi;
+    color: #5c193ba6;
+}
+.main .youLike .ayouLikePP{
+    font: 600 26px KaiTi;
+    text-align: center;
+    margin-top: 13px;
+    letter-spacing:3px;
+    color: #cb8589;
+}
+body .demo-class .layui-layer-title{background: #79dbe9; color:#fff; border: none;}
+body .demo-class .layui-layer-btn{border-top:1px solid #f6f1f1}
+body .demo-class .layui-layer-btn a{background: #10a1ef;}
+body .demo-class .layui-layer-btn .layui-layer-btn1{background: #e3dbdb;}
+.main .orderForm {
+    position: absolute;
+    right: 110px;
+    top: -53px;
+    width: 118px;
+    height: 308px;
+    letter-spacing: 5px;
+    font: 600 24px KaiTi;
+    border: 1px solid #e7e1e1;
+    z-index: 10;
+    display: none;
+    background-color: #ffd6d6;
+}
+.main .orderForm .orderFormItem {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height:44px;
+    flex: 1;
+    color: #3a3636;
+    letter-spacing: 0.2rem;
+    font: 500 18px STHeiti Light;
+    /*border: 1px solid black;*/
+}
+.main .orderForm .orderFormItem:hover{
+    background-color: #da9191;
+    color: #626262;
+}
+body .moneyClass .layui-layer-content,.layui-layer-btn,.layui-layer-title{background-color: #a4dfdf;color: #f6f1f1}
+.topupRecord {
+    position: absolute;
+    left: 720px;
+    top: 260px;
+    width: 501px;
+    height: 400px;
+    z-index: 10;
+    display: none;
+    /*background-color: #ade8e8;*/
+}
+.orderFormRecord{
+    position: absolute;
+    left: 282px;
+    width: 1355px;
+    top: 220px;
+    height: 480px;
+    z-index: 10;
+    display: none;
+    /*background-color: #ade8e8;*/
+}
+.addressRecord{
+    position: absolute;
+    left: 660px;
+    width: 600px;
+    top: 220px;
+    height: 480px;
+    z-index: 10;
+    display: none;
+    /*background-color: #ade8e8;*/
+}
+.searchLayer{
+    position: absolute;
+    left: 560px;
+    width: 800px;
+    top: 220px;
+    height: 480px;
+    z-index: 10;
+    display: none;
+    /*background-color: #ade8e8;*/
+}
+.payAddressPhone {
+    position: fixed;
+    left: 720px;
+    top: 260px;
+    width: 500px;
+    height: 350px;
+    z-index: 10;
+    display: none;
+    background-color: #c6ecec;
+}
+.payAddressPhone .layui-form .forgetForm{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 220px;
+    top: 50px;
+    right: 38px;
+}
+.payAddressPhone .layui-form .forgetForm .layui-form-item{
+    width: 100%;
+    height: 27%;
+    /*border: 1px solid black;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.payAddressPhone .layui-form .forgetForm .layui-form-item img{
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 12px 12px;
+}
+.payAddressPhone .layui-form .forgetForm .layui-form-item .layui-form-label{
+    width: 55px;
+    font: 520 22px STKaiti;
+    /*border: 1px solid black;*/
+    margin-top: 16px;
+    padding: 0 4px 0 0;
+}
+.payAddressPhone .layui-form .forgetForm .layui-form-item .layui-input-block{
+    /*border: 1px solid black;*/
+    width: 260px;
+    height: 45px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+.payAddressPhone .layui-form .forgetForm .layui-form-item .layui-input-block input{
+    width: 100%;
+    height: 45px;
+}
+.payAddressPhone .layui-form .layui-submit{
+    /*border: 1px solid black;*/
+    width: 390px;
+    height: 70px;
+    position: relative;
+    margin-top: 267px;
+    margin-left: 65px;
+}
+.payAddressPhone .layui-form .layui-submit .last{
+    width: 46%;
+    height: 70%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+    background-color: #fabf9d;
+    color: #584e4e;
+}
+.payAddressPhone .layui-form .layui-submit .layui-btn{
+    width: 46%;
+    height: 70%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+}
+/*表格单选按钮*/
+.laytable-cell-checkbox, .laytable-cell-numbers, .laytable-cell-radio, .laytable-cell-space {
+    padding-top: 15px;
+    text-align: center;
+}
+/*修改密码*/
+.updatePassword{
+    width: 500px;
+    height: 350px;
+    border: 1px solid #eab1b1;
+    background-color: aliceblue;
+    border-radius: 50px;
+    position: absolute;
+    left: 710px;
+    top: 250px;
+    float: left;
+    display: none;
+    z-index: 15;
+}
+.updatePassword .layui-form{
+    width: 90%;
+    height: 87%;
+    /*border: 1px solid #ffffff;*/
+    margin: 25px auto;
+    position: relative;
+}
+.updatePassword .layui-form p{
+    font:600 20px KaiTi;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.updatePassword .layui-form .forgetForm p{
+    padding: 0;
+    position: absolute;
+    font:500 18px KaiTi;
+    width: 80px;
+    height: 20px;
+    left: 10px;
+    bottom: -18px;
+    color: #00b5ff;
+    display: block;
+    cursor: pointer;
+}
+.updatePassword .layui-form .forgetForm{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 430px;
+    height: 170px;
+    top: 50px;
+    right: 10px;
+}
+.updatePassword .layui-form .forgetForm .layui-form-item{
+    width: 100%;
+    height: 38%;
+    /*border: 1px solid black;*/
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.updatePassword .layui-form .forgetForm .layui-form-item img{
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 12px 12px;
+}
+.updatePassword .layui-form .forgetForm .layui-form-item .layui-form-label{
+    width: 95px;
+    font: 520 22px STKaiti;
+    /*border: 1px solid black;*/
+    margin-top: 16px;
+    padding: 0 4px 0 0;
+    text-align: center;
+}
+.updatePassword .layui-form .forgetForm .layui-form-item .layui-input-block{
+    /*border: 1px solid black;*/
+    width: 260px;
+    height: 45px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+.updatePassword .layui-form .forgetForm .layui-form-item .layui-input-block input{
+    width: 100%;
+    height: 45px;
+}
+.updatePassword .layui-form .layui-submit{
+    /*border: 1px solid black;*/
+    width: 380px;
+    height: 70px;
+    position: relative;
+    margin-top: 180px;
+    margin-left: 30px;
+}
+.updatePassword .layui-form .layui-submit .last{
+    width: 46%;
+    height: 70%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+    background-color: #fabf9d;
+    color: #584e4e;
+}
+.updatePassword .layui-form .layui-submit .layui-btn{
+    width: 46%;
+    height: 70%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+}

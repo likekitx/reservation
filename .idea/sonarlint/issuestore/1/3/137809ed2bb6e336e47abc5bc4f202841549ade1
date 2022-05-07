@@ -1,0 +1,28 @@
+
+H
+java:S1948"&Make "list" transient or serializable.(‹ÆÎùÿÿÿÿ8­€ûİƒ0
+K
+java:S1948".Make "indexService" transient or serializable.(®Ï ˆ8­€ûİƒ0
+G
+java:S1948"%Make "map" transient or serializable.(á…˜øÿÿÿÿ8­€ûİƒ0
+C
+java:S1948"&Make "mapString" private or transient.(³Æ«×8­€ûİƒ0
+H
+java:S1948"+Make "orderForm" transient or serializable.(ë¦·Ş8­€ûİƒ0
+P
+java:S1948"4Make "orderFormVegetable" transient or serializable.(Òïô	8­€ûİƒ0
+o
+java:S3776%"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‹¨¯¿8­€ûİƒ0
+Z
+java:S1854á"=Remove this useless assignment to local variable "attribute".(ı‹ÊR8ì€ûİƒ0
+K
+java:S1481á".Remove this unused "attribute" local variable.(ı‹ÊR8ì€ûİƒ0
+L
+java:S1172ì".Remove this unused method parameter "request".(Š’ö8ì€ûİƒ0
+Z
+java:S3972ø"7Move this "if" to a new line or add the missing "else".(ÍÙßÁüÿÿÿÿ8‹ûİƒ0
+{
+java:S2293t"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÌåÚüÿÿÿÿ8’ûİƒ0
+|
+java:S2293Ş"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŞÁ–Ğüÿÿÿÿ8’ûİƒ0
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œÁÍÊúÿÿÿÿ8’ûİƒ0

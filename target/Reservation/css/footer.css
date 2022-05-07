@@ -1,0 +1,13 @@
+footer {
+    width: 1920px;
+    height:40px;
+    position: relative;
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    cursor: pointer;
+}
+footer ul li a:hover{
+    color: #f18f48;
+}

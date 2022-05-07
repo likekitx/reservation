@@ -1,0 +1,18 @@
+
+<
+java:S1659"&Declare "password" on a separate line.(¬»Ð—
+:
+java:S3010"$Remove this assignment of "account".(Ÿä¹×
+@
+java:S3010"%Remove this assignment of "password".(çÁÇ£ÿÿÿÿÿ
+K
+java:S1128"5Remove this unused import 'java.awt.image.RescaleOp'.(Õá»Õ
+i
+java:S1104"SMake account a static final constant or non-public and provide accessors if needed.(¬»Ð—
+j
+java:S1104"TMake password a static final constant or non-public and provide accessors if needed.(¬»Ð—
+C
+java:S1444"-Make this "public static account" field final(¬»Ð—
+D
+java:S1444".Make this "public static password" field final(¬»Ð—
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Áæïþÿÿÿÿ

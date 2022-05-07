@@ -1,0 +1,22 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(İÄ‘
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÆ­Ûşÿÿÿÿ
+X
+java:S1854_"=Remove this useless assignment to local variable "resultSet".(ÅİÓªşÿÿÿÿ
+[
+java:S1854j"ERemove this useless assignment to local variable "preparedStatement".(ğîáÄ
+T
+java:S1854u">Remove this useless assignment to local variable "connection".(ÈØ“
+M
+java:S1128"+Remove this unused import 'org.junit.Test'.(ùøèøÿÿÿÿ8œĞÉ¶‚0
+W
+java:S1128"5Remove this unused import 'java.util.ResourceBundle'.(ıÆ£¯øÿÿÿÿ8ĞÉ¶‚0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÈŸòøøÿÿÿÿ
+d
+java:S12262"NIntroduce a new variable instead of reusing the parameter "preparedStatement".(ÉøÙ´
+d
+java:S1226H"NIntroduce a new variable instead of reusing the parameter "preparedStatement".(ÉøÙ´
+e
+java:S2095H"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´
+e
+java:S20952"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´

@@ -1,0 +1,284 @@
+@charset "utf-8";
+*{
+    //取消下划线
+    text-decoration: none;
+    //取消列表样式
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    //弹性元素
+    display: flex;
+    //垂直居中
+    justify-content: center;
+    //交叉轴居中
+    align-items: center;
+    width:1920px;
+}
+body:before{
+    content: "";
+    width: 1920px;
+    height: 936px;
+    background: url(../img/loginBackV2.jpg) no-repeat fixed;
+    background-size: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(2px);
+}
+header {
+    width: 1920px;
+    height: 120px;
+    /*border: 1px solid black;*/
+}
+header .headIcon{
+    width: 280px;
+    height: 80px;
+    /*border: 1px solid black;*/
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+    cursor: pointer;
+}
+header .headIcon .icon {
+    float: left;
+}
+header .headIcon h1 {
+    float: left;
+    margin-top: 18px;
+    font: 700 36px STKaiti;
+    color: rgba(255, 60, 60, 0.7);
+}
+header .login{
+    width: 270px;
+    height: 80px;
+    /*border: 1px solid black;*/
+    float: left;
+    margin-top: 20px;
+    margin-left: 1200px;
+    margin-bottom: 30px;
+}
+header .login p{
+    float: left;
+    font: 500 23px SourceHanSansSC;
+    margin-top: 24px;
+    margin-left: 10px;
+}
+header .login .layui-btn-container .layui-btn-radius{
+    border-radius: 18px;
+}
+header .login .layui-btn-container .layui-btn-normal{
+    background-color: #f16868;
+}
+header .login .layui-btn{
+    float: left;
+    font: 600 25px STKaiti;
+    width: 120px;
+    height: 40px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.main {
+    margin-top: 25px;
+    /*border-top: 1px solid black;*/
+    width: 100%;
+    height: 740px;
+}
+.main .layui-carousel {
+    /*border: 1px solid black;*/
+    position: relative;
+    left: 70px;
+    top: 10px;
+    float: left;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.main .layui-carousel img{
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: -80px;
+    left: -75px;
+    background-color: #fff0f0;
+}
+.main .register {
+    width: 800px;
+    height: 550px;
+    /*border: 1px solid #eab1b1;*/
+    border-radius: 50px;
+    position: relative;
+    left: 220px;
+    top: 100px;
+    float: left;
+}
+.main .register form{
+    width: 80%;
+    height: 90%;
+    /*border: 1px solid black;*/
+    margin-top: 27px;
+    margin-left: 80px;
+}
+.main .register form p{
+    font:600 20px KaiTi;
+}
+.main .register .layui-form{
+    position: relative;
+}
+.main .register .layui-form .layui-form-item {
+    width: 300px;
+    height: 45px;
+    /*border: 1px solid black;*/
+    /*margin-left: 10px;*/
+    position:relative;
+}
+.main .register .layui-form .layui-form-item img{
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 4px 4px;
+}
+.main .register .layui-form .layui-form-item .layui-form-label {
+    width: 44px;
+    font: 520 18px SourceHanSansSC;
+    /*border: 1px solid black;*/
+    margin-top: 10px;
+    padding: 0 4px 0 0;
+}
+.main .register .layui-form .layui-form-item .layui-input-block {
+    /*border: 1px solid black;*/
+    width: 200px;
+    height: 34px;
+    position: relative;
+    right: 12px;
+    top: 6px;
+}
+.main .register .layui-form .layui-form-item .layui-input-inline{
+    /*border: 1px solid black;*/
+    width: 200px;
+    height: 34px;
+    position: absolute;
+    bottom: 5px;
+    right: -8px;
+}
+.main .register .layui-form .layui-form-item .layui-input-block input {
+    width: 100%;
+    height: 34px;
+}
+.main .register .layui-form .school{
+    /*border: 1px solid black;*/
+    width: 300px;
+    position: absolute;
+    height: 158px;
+    top: 21px;
+    right: 2px;
+}
+.main .register .layui-form .school .layui-inline{
+    width: 100%;
+    /*border: 1px solid black;*/
+    margin-top: 5px;
+    position: relative;
+}
+.main .register .layui-form .school .layui-inline img{
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 4px 4px;
+}
+.main .register .layui-form .school .layui-inline .layui-form-label {
+    width: 44px;
+    font: 520 18px SourceHanSansSC;
+    /*border: 1px solid black;*/
+    margin-top: 9px;
+    padding: 0 4px 0 0;
+}
+.main .register .layui-form .school .layui-inline .layui-input-inline {
+    /*border: 1px solid black;*/
+    width: 200px;
+    height: 38px;
+    position: absolute;
+    right: 1px;
+    top: 3px;
+}
+.main .register .layui-form .account{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 300px;
+    height: 114px;
+    top: 207px;
+    right: 2px;
+}
+.main .register .layui-form .account .layui-form-item{
+    width: 100%;
+    /*border: 1px solid black;*/
+    margin-top: 2px;
+    position: relative;
+}
+.main .register .layui-form .account .layui-form-item img{
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin: 4px 4px;
+}
+.main .register .layui-form .account .layui-form-item .layui-form-label{
+    width: 44px;
+    font: 520 18px SourceHanSansSC;
+    /*border: 1px solid black;*/
+    margin-top: 9px;
+    padding: 0 4px 0 0;
+}
+.main .register .layui-form .account .layui-form-item .layui-input-block{
+    /*border: 1px solid black;*/
+    width: 200px;
+    height: 34px;
+    position: absolute;
+    top: 5px;
+    right: 1px;
+}
+.main .register .layui-form .account .layui-form-item .layui-input-block input{
+    width: 100%;
+    height: 34px;
+}
+.main .register .layui-form .layui-elem-field{
+    width: 500px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+    padding-left: 5px;
+}
+.main .register .layui-form .layui-elem-field .layui-field-box{
+    /*border: 1px solid black;*/
+    width: 440px;
+    padding: 0;
+    position: absolute;
+    left: 54px;
+    top: 1px;
+}
+.main .register .layui-form .layui-elem-field .layui-field-box a{
+    text-decoration: underline;
+    padding-bottom: 1px;
+    color: #5aa1b0;
+    cursor: pointer;
+}
+.main .register .layui-form .layui-elem-field .layui-field-box a:hover{
+    color: #7993c8;
+}
+.main .register .layui-form .layui-submit{
+    /*border: 1px solid black;*/
+    width: 450px;
+    height: 60px;
+    position: relative;
+    margin: 10px auto auto;
+}
+.main .register .layui-form .layui-submit .layui-btn{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 8px;
+    left: 70px;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font: 600 22px KaiTi;
+}
